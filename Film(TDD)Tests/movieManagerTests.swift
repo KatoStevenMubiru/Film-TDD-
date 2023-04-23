@@ -12,8 +12,9 @@ final class movieManagerTests: XCTestCase {
     
     var sut : MovieManager! //  let sut = MovieManager()//sut is system under test
     
+    //declare some sample movies
     let scifiMovie = Movie(title: "Sci-Fi")
-    let arthouseMovie = Movie(title: "Arthouse Drama")
+    let arthouseMovie = Movie(title: "Drama")
     let actionMovie = Movie(title: "Action/Adventure")
 
     override func setUpWithError() throws {
@@ -45,8 +46,8 @@ final class movieManagerTests: XCTestCase {
     //MARK : addInQuery
     
     func testAdd_MoviesToSee_Returns1(){
-        let testMovie = Movie(title: "Sci-Fi")
-        sut.addMovie(movie: testMovie)
+   
+        sut.addMovie(movie: scifiMovie)
         
         XCTAssertEqual(sut.movieToSee, 1)
     }//testAdd_MoviesToSee_Returns1
