@@ -27,6 +27,8 @@ class MovieManager{
         guard index < movieToSee else { return }
         movieToSee -= 1
         movieSeen  += 1
+        
+        moviesToSeeArray.remove(at: index)
     }
 }//MovieManager
 
