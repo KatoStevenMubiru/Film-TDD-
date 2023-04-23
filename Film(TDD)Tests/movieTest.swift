@@ -29,5 +29,7 @@ final class movieTest: XCTestCase {
     func testInit_setMovieTitleandReleaseDate(){
         
         let testMovie = Movie(title: "Romantic Comedy", releaseDate : "1999")
+        
+        XCTAssertNil(testMovie)
     }//testInit_setMovieTitleandReleaseDate
 }
