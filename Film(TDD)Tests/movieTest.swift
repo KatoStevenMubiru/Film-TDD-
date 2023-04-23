@@ -18,5 +18,10 @@ final class movieTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    
+    func testInit_MovieTitle(){
+        let testMovie = Movie(title: "Block Buster")
+        
+    }//testInit_MovieTitle
 
 }
