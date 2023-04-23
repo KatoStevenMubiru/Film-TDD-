@@ -57,4 +57,7 @@ final class movieManagerTests: XCTestCase {
         
     }//testQuery_ReturnsMovieToIndex
     
+    func testCheckOffMovie_UpdatesMovieManagerCounts(){
+        
+    }//testCheckOffMovie_UpdatesMovieManagerCounts
 }
