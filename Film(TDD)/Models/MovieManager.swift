@@ -8,11 +8,12 @@
 import Foundation
 
 class MovieManager{
-    let movieToSee = 0
+    var movieToSee = 0
     let movieSeen = 0
     
+    func addMovie(movie : Movie){
+        movieToSee += 1
+    }//addMovie
+
 }//MovieManager
 
-func addMovie(movie : Movie){
-    movieToSee += 1
-}
