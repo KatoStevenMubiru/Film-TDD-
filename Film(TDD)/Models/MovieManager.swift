@@ -33,7 +33,7 @@ class MovieManager{
     }
     func checkedOffMovie(index: Int) -> Movie{
         
-        
+        return moviesSeenArray[index]
     }//checkedOffMovie
 }//MovieManager
 
