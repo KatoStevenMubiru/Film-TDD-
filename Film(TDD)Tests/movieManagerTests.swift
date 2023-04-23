@@ -24,5 +24,12 @@ final class movieManagerTests: XCTestCase {
         XCTAssertEqual(sut.movieToSee, 0)
         
     }//testInit_MoviesToSee_ReturnsZero
+    
+    func testInit_MoviesSeen_ReturnsZero(){
+        
+        let sut = MovieManager()
+        
+        XCTAssertEqual(sut.movieSeen, 0)
+    }//testInit_MoviesSeen_ReturnsZero
 
 }
