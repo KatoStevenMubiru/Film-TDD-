@@ -29,7 +29,8 @@ class MovieManager{
         movieToSee -= 1
         movieSeen  += 1
         
-        moviesToSeeArray.remove(at: index)
+      let checkedMovie =  moviesToSeeArray.remove(at: index)
+        moviesSeenArray.append(checkedMovie)
     }
     func checkedOffMovie(index: Int) -> Movie{
         
