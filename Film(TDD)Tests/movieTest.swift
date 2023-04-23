@@ -22,6 +22,8 @@ final class movieTest: XCTestCase {
     func testInit_MovieTitle(){
         let testMovie = Movie(title: "Block Buster")
         
+        XCTAssertNotNil(testMovie)
+        
     }//testInit_MovieTitle
 
 }
