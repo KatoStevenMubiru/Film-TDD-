@@ -28,6 +28,6 @@ final class movieTest: XCTestCase {
 
     func testInit_setMovieTitleandReleaseDate(){
         
-        
+        let testMovie = Movie(title: "Romantic Comedy")
     }//testInit_setMovieTitleandReleaseDate
 }
