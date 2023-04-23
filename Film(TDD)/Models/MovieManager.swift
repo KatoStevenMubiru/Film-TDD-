@@ -8,7 +8,7 @@
 import Foundation
 
 class MovieManager{
-    
+    let movieToSee = 0
     
     
 }//MovieManager
