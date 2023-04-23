@@ -9,7 +9,7 @@ import Foundation
 
 class MovieManager{
     var movieToSee = 0
-    let movieSeen = 0
+    var movieSeen = 0
     
     private var moviesToSeeArray = [Movie]()
     
@@ -22,5 +22,11 @@ class MovieManager{
         
        return moviesToSeeArray[index]
     }//movieAtIndex
+    
+    func checkOffMovie(index: Int){
+        guard index < movieToSee else { return }
+        movieToSee -= 1
+        movieSeen  += 1
+    }
 }//MovieManager
 
