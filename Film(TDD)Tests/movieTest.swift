@@ -26,4 +26,8 @@ final class movieTest: XCTestCase {
         XCTAssertEqual(testMovie.title, "Block Buster")
     }//testInit_MovieTitle
 
+    func testInit_setMovieTitleandReleaseDate(){
+        
+        
+    }//testInit_setMovieTitleandReleaseDate
 }
