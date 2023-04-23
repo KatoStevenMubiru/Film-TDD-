@@ -9,9 +9,13 @@ import XCTest
 
 @testable import Film_TDD_
 final class movieManagerTests: XCTestCase {
+    
+    var sut : MovieManager! //  let sut = MovieManager()//sut is system under test
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        sut = MovieManager()
     }
 
     override func tearDownWithError() throws {
@@ -19,7 +23,7 @@ final class movieManagerTests: XCTestCase {
     }
 
     func testInit_MoviesToSee_ReturnsZero(){
-        let sut = MovieManager()//sut is system under test
+      
         
         XCTAssertEqual(sut.movieToSee, 0)
         
@@ -27,7 +31,7 @@ final class movieManagerTests: XCTestCase {
     
     func testInit_MoviesSeen_ReturnsZero(){
         
-        let sut = MovieManager()
+      //  let sut = MovieManager()
         
         XCTAssertEqual(sut.movieSeen, 0)
     }//testInit_MoviesSeen_ReturnsZero
