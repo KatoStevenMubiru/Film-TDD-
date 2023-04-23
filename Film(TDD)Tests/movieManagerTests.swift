@@ -22,6 +22,7 @@ final class movieManagerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    //MARK : initial values
     func testInit_MoviesToSee_ReturnsZero(){
       
         
@@ -29,6 +30,7 @@ final class movieManagerTests: XCTestCase {
         
     }//testInit_MoviesToSee_ReturnsZero
     
+    //MARK : addInQuery
     func testInit_MoviesSeen_ReturnsZero(){
         
       //  let sut = MovieManager()
