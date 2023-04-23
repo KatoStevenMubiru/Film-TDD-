@@ -60,5 +60,9 @@ final class movieManagerTests: XCTestCase {
     //MARK : Checking Off
     func testCheckOffMovie_UpdatesMovieManagerCounts(){
         sut.addMovie(movie: Movie(title: "Action/Adventure"))
+        sut.checkOffMovie(index: 0)
+        
+        XCTAssertEqual(sut.movieToSee, 0)
+        XCTAssertEqual(sut.movieSeen, 1)
     }//testCheckOffMovie_UpdatesMovieManagerCounts
 }
