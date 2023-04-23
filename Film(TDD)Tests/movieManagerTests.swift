@@ -42,7 +42,9 @@ final class movieManagerTests: XCTestCase {
     
     func testAdd_MoviesToSee_Returns1{
         let testMovie = Movie(title: "Sci-Fi")
-        sut.addMovie
+        sut.addMovie(movie: testMovie)
+        
+        XCTAssertEqual(sut.movieToSee, 1)
     }
     
 }
