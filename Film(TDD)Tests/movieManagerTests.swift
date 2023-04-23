@@ -53,21 +53,29 @@ final class movieManagerTests: XCTestCase {
     }//testAdd_MoviesToSee_Returns1
     
     func testQuery_ReturnsMovieToIndex(){
-        let testMovie = Movie(title: "Drama")
-        sut.addMovie(movie: testMovie)
+        
+        sut.addMovie(movie: arthouseMovie)
         
         let movieQuery = sut.movieAtIndex(index: 0)
         
-        XCTAssertEqual(testMovie.title, movieQuery.title)
+        XCTAssertEqual(arthouseMovie.title, movieQuery.title)
         
     }//testQuery_ReturnsMovieToIndex
     
     //MARK : Checking Off
     func testCheckOffMovie_UpdatesMovieManagerCounts(){
-        sut.addMovie(movie: Movie(title: "Action/Adventure"))
+        sut.addMovie(movie:  actionMovie)
         sut.checkOffMovie(index: 0)
         
         XCTAssertEqual(sut.movieToSee, 0)
         XCTAssertEqual(sut.movieSeen, 1)
     }//testCheckOffMovie_UpdatesMovieManagerCounts
+    
+    func testCheckOffMovie_RemovesMovies(){
+        sut.addMovie(movie: scifiMovie)
+        sut.addMovie(movie: arthouseMovie)
+        sut.checkOffMovie(index: 0)
+        
+        XCTAssertEqual(sut.movieAtIndex(index: 0).title, arthouseMovie.title)
+    }
 }
