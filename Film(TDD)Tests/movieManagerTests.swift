@@ -77,5 +77,13 @@ final class movieManagerTests: XCTestCase {
         sut.checkOffMovie(index: 0)
         
         XCTAssertEqual(sut.movieAtIndex(index: 0).title, arthouseMovie.title)
-    }
+    }//testCheckOffMovie_RemovesMovies
+    
+    func testCheckOff_ReturnsMovies(){
+        sut.addMovie(movie: scifiMovie)
+        sut.checkOffMovie(index: 0)
+        
+        let movieQuery = sut.checkOffMovie(index: 0)
+        
+    }//testCheckOff_ReturnsMovies
 }
