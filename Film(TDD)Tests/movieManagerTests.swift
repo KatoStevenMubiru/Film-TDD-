@@ -19,7 +19,9 @@ final class movieManagerTests: XCTestCase {
     }
 
     func testInit_MoviesToSee_ReturnsZero(){
-        let sut = MovieManger()//sut is system under test
+        let sut = MovieManager()//sut is system under test
+        
+        XCTAssertEqual(sut.movieToSee, 0)
         
     }//testInit_MoviesToSee_ReturnsZero
 
