@@ -31,5 +31,6 @@ final class movieTest: XCTestCase {
         let testMovie = Movie(title: "Romantic Comedy", releaseDate : "1999")
         
         XCTAssertNil(testMovie)
+        XCTAssertEqual(testMovie.releaseDate, "1987")
     }//testInit_setMovieTitleandReleaseDate
 }
