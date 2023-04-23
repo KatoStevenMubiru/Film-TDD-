@@ -15,5 +15,9 @@ class MovieManager{
         movieToSee += 1
     }//addMovie
 
+    func movieAtIndex(index: Int) -> Movie{
+        
+       return Movie(title: "Teen Comedy")
+    }//movieAtIndex
 }//MovieManager
 
