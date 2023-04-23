@@ -84,7 +84,7 @@ final class movieManagerTests: XCTestCase {
         sut.checkOffMovie(index: 0)
         
         let movieQuery = sut.checkOffMovie(index: 0)
-      //  XCTAssertEqual(scifiMovie.title, movieQuery.title)
+        XCTAssertEqual(scifiMovie.title, movieQuery.title)
         
         
     }//testCheckOff_ReturnsMovies
