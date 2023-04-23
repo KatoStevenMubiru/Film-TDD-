@@ -22,17 +22,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tZ3-Wr-ZEc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tZ3-Wr-ZEc">
                                 <rect key="frame" x="16" y="80" width="343" height="567"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tZ3-Wr-ZEc" secondAttribute="bottom" constant="20" id="7As-Dq-16F"/>
                             <constraint firstItem="Q82-Ic-sgA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P5T-0a-JQg"/>
                             <constraint firstItem="Q82-Ic-sgA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="iYK-GS-AEY"/>
+                            <constraint firstItem="tZ3-Wr-ZEc" firstAttribute="top" secondItem="Q82-Ic-sgA" secondAttribute="bottom" constant="8" id="oyp-vb-1zp"/>
+                            <constraint firstItem="tZ3-Wr-ZEc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ujf-Pg-DSz"/>
+                            <constraint firstItem="tZ3-Wr-ZEc" firstAttribute="centerX" secondItem="Q82-Ic-sgA" secondAttribute="centerX" id="w5c-bh-CSM"/>
                         </constraints>
                     </view>
                 </viewController>
