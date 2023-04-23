@@ -11,5 +11,8 @@ struct Movie{
    let title : String
     let releaseDate : String?
     
-    
+    init(title: String, releaseDate : String? = nil){
+        
+        
+    }//init
 }
