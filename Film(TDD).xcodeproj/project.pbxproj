@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				9413250329F51ECB00F3F929 /* AppDelegate.swift */,
-				9413253529F5267300F3F929 /* Movie.swift */,
+				9413253B29F5344D00F3F929 /* Models */,
 				9413250529F51ECB00F3F929 /* SceneDelegate.swift */,
 				9413253729F530BC00F3F929 /* Controllers */,
 				9413250929F51ECB00F3F929 /* Main.storyboard */,
@@ -139,6 +139,14 @@
 				9413250729F51ECB00F3F929 /* ViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9413253B29F5344D00F3F929 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9413253529F5267300F3F929 /* Movie.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
