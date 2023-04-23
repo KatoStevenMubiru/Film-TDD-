@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import Film_TDD_
 
 final class movieTest: XCTestCase {
 
