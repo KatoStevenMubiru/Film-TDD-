@@ -9,6 +9,6 @@ import Foundation
 
 class MovieManager{
     let movieToSee = 0
-    
+    let movieSeen = 0
     
 }//MovieManager
