@@ -23,7 +23,7 @@ final class movieTest: XCTestCase {
         let testMovie = Movie(title: "Block Buster")
         
         XCTAssertNotNil(testMovie)
-        
+        XCTAssertEqual(testMovie.title, "Block Buster")
     }//testInit_MovieTitle
 
 }
