@@ -11,6 +11,8 @@ class MovieManager{
     var movieToSee = 0
     let movieSeen = 0
     
+    private var moviesToSeeArray = [Movie]()
+    
     func addMovie(movie : Movie){
         movieToSee += 1
     }//addMovie
