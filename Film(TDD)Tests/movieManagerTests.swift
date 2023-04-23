@@ -57,7 +57,8 @@ final class movieManagerTests: XCTestCase {
         
     }//testQuery_ReturnsMovieToIndex
     
+    //MARK : Checking Off
     func testCheckOffMovie_UpdatesMovieManagerCounts(){
-        
+        sut.addMovie(movie: M)
     }//testCheckOffMovie_UpdatesMovieManagerCounts
 }
