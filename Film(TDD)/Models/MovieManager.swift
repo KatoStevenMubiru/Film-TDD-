@@ -12,3 +12,7 @@ class MovieManager{
     let movieSeen = 0
     
 }//MovieManager
+
+func addMovie(movie : Movie){
+    movieToSee += 1
+}
