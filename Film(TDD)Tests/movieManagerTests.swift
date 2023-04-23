@@ -40,11 +40,21 @@ final class movieManagerTests: XCTestCase {
 
     //MARK : addInQuery
     
-    func testAdd_MoviesToSee_Returns1{
+    func testAdd_MoviesToSee_Returns1(){
         let testMovie = Movie(title: "Sci-Fi")
         sut.addMovie(movie: testMovie)
         
         XCTAssertEqual(sut.movieToSee, 1)
-    }
+    }//testAdd_MoviesToSee_Returns1
+    
+    func testQuery_ReturnsMovieToIndex(){
+        let testMovie = Movie(title: "Drama")
+        sut.addMovie(movie: testMovie)
+        
+        let movieQuery = sut.movieAtIndex(index: 0)
+        
+        XCTAssertEqual(testMovie.title, movieQuery.title)
+        
+    }//testQuery_ReturnsMovieToIndex
     
 }
