@@ -15,11 +15,12 @@ class MovieManager{
     
     func addMovie(movie : Movie){
         movieToSee += 1
+        moviesToSeeArray.append(movie)
     }//addMovie
 
     func movieAtIndex(index: Int) -> Movie{
         
-       return Movie(title: "Teen Comedy")
+       return moviesToSeeArray[index]
     }//movieAtIndex
 }//MovieManager
 
