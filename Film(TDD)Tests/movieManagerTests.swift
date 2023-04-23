@@ -11,6 +11,10 @@ import XCTest
 final class movieManagerTests: XCTestCase {
     
     var sut : MovieManager! //  let sut = MovieManager()//sut is system under test
+    
+    let scifiMovie = Movie(title: "Sci-Fi")
+    let arthouseMovie = Movie(title: "Arthouse Drama")
+    let actionMovie = Movie(title: "Action/Adventure")
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
