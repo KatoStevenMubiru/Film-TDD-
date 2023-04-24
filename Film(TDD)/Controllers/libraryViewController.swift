@@ -9,6 +9,8 @@ import UIKit
 
 class libraryViewController: UIViewController {
 
+    @IBOutlet weak var libraryTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
