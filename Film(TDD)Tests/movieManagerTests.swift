@@ -88,4 +88,5 @@ final class movieManagerTests: XCTestCase {
         
         
     }//testCheckOff_ReturnsMovies
+    
 }
