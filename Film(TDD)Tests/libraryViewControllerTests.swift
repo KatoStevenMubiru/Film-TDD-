@@ -25,6 +25,6 @@ final class libraryViewControllerTests: XCTestCase {
 
    //MARK: Nil Checks
     func testLibraryVC_TableViewShouldNotBeNil(){
-        
+        XCTAssertNotNil(sut.libraryTableView)
     }
 }
