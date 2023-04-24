@@ -10,9 +10,13 @@ import XCTest
 @testable import Film_TDD_
 
 final class libraryViewControllerTests: XCTestCase {
-
+     
+    var sut : libraryViewController!
+    
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        sut = libraryViewController()
     }
 
     override func tearDownWithError() throws {
