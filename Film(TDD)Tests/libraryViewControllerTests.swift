@@ -16,7 +16,8 @@ final class libraryViewControllerTests: XCTestCase {
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        sut = libraryViewController()
+        sut = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController("libraryVCID") as! libraryViewController
+        _ = sut.view
     }
 
     override func tearDownWithError() throws {
